@@ -1,0 +1,24 @@
+Relic Drift
+Copyright 2026 Relic Drift contributors
+
+All visible 3D assets were generated with Idol Studio:
+https://github.com/shohdi/idol-csharp
+Reference commit: 1ff3ee61a2f719637cfb6ac8113b2ec9494fa082
+Idol Studio code is Apache-2.0.
+The importer, Gaussian data format, shader and rendering integration contain
+adaptations of Idol Studio source, modified for a multi-actor Unity game.
+
+Idol Studio uses the Speridlabs Idol model:
+https://huggingface.co/speridlabs/idol
+https://github.com/speridlabs/idol-sdk
+Idol revision: 2731c2291fc65a797c5cb627a5e5526fc1490902
+Original model outputs, settings and source image hashes are recorded in Docs/Provenance.
+No model weights are redistributed in this game repository or its player build.
+
+The three 2D source images were created for this project with the built-in
+OpenAI image-generation tool. Music and sound effects are original runtime
+synthesis in C#; no third-party audio files were used.
+
+Unity and its packages retain their own licenses and terms. Model and image
+generation tools retain their respective terms; the code license does not
+override those terms. No downloaded or hand-modeled 3D asset was used.

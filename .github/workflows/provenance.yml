@@ -1,0 +1,23 @@
+name: Verify Idol asset provenance
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  assets:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify original source and Idol output hashes
+        shell: pwsh
+        run: ./Tools/Verify-Provenance.ps1
+      - name: Check that no conventional 3D asset or credential file is committed
+        shell: pwsh
+        run: |
+          $forbidden = @('.fbx','.obj','.blend','.dae','.3ds','.glb','.gltf','.stl','.ply','.safetensors','.onnx')
+          $bad = Get-ChildItem Assets -Recurse -File | Where-Object { $forbidden -contains $_.Extension.ToLowerInvariant() }
+          if ($bad) { throw 'Conventional 3D assets or model weights are not allowed in Assets.' }
+          $tracked = @(git ls-files)
+          if ($tracked | Where-Object { $_ -match '(^|/)(token\.txt|\.env)$' }) { throw 'A credential file is tracked.' }
+          if (@(Get-ChildItem Assets -Recurse -Filter '*.idolply').Count -ne 3) { throw 'Exactly three Idol-generated world models are required.' }

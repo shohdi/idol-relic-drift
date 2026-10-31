@@ -1,0 +1,24 @@
+{
+  "Asset": "void-rock",
+  "SourceImage": "Assets/Game/Art/Sources/void-rock.png",
+  "SourceImageSha256": "f7af55b1a12c203569406639886df07e964db8e05a24ea8f4d974e6938883195",
+  "Model": "speridlabs/idol",
+  "ModelRevision": "2731c2291fc65a797c5cb627a5e5526fc1490902",
+  "Tool": "https://github.com/shohdi/idol-csharp",
+  "ToolCommit": "1ff3ee61a2f719637cfb6ac8113b2ec9494fa082",
+  "Options": {
+    "Seed": 3042,
+    "Steps": 50,
+    "NumGaussians": 32768,
+    "Guidance": 3,
+    "TimeShift": 3,
+    "RealPhoto": false
+  },
+  "GaussianCount": 32768,
+  "Output": "Assets/Game/Art/Splats/void-rock.idolply",
+  "OutputSha256": "ce8425e289407d6a93cd3703b9c0cdfecbd73cfd7faafb6a68e0c454bc9f7475",
+  "Seconds": 196.3353398,
+  "CreatedUtc": "2026-10-31T13:59:59.9128837Z",
+  "CoordinateConvention": "Idol Studio native Z-up to Y-up; Unity importer reflects Z",
+  "GeometryEdits": "None. Original Idol output; game applies only rigid transforms and scale."
+}

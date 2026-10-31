@@ -1,0 +1,24 @@
+{
+  "Asset": "sun-crystal",
+  "SourceImage": "Assets/Game/Art/Sources/sun-crystal.png",
+  "SourceImageSha256": "b681b9181a87147abded7818d6a7022542b8a334f79ead14b95cc222b3d0e800",
+  "Model": "speridlabs/idol",
+  "ModelRevision": "2731c2291fc65a797c5cb627a5e5526fc1490902",
+  "Tool": "https://github.com/shohdi/idol-csharp",
+  "ToolCommit": "1ff3ee61a2f719637cfb6ac8113b2ec9494fa082",
+  "Options": {
+    "Seed": 2042,
+    "Steps": 50,
+    "NumGaussians": 32768,
+    "Guidance": 3,
+    "TimeShift": 3,
+    "RealPhoto": false
+  },
+  "GaussianCount": 32768,
+  "Output": "Assets/Game/Art/Splats/sun-crystal.idolply",
+  "OutputSha256": "b84cf5c52671f12f2783107b0b91a8d146054c563c0612f6afc90218ee874a6c",
+  "Seconds": 194.3166134,
+  "CreatedUtc": "2026-10-31T13:56:43.566665Z",
+  "CoordinateConvention": "Idol Studio native Z-up to Y-up; Unity importer reflects Z",
+  "GeometryEdits": "None. Original Idol output; game applies only rigid transforms and scale."
+}

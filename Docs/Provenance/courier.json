@@ -1,0 +1,24 @@
+{
+  "Asset": "courier",
+  "SourceImage": "Assets/Game/Art/Sources/courier.png",
+  "SourceImageSha256": "1b47169af68c8340aa5d10ccdf2f6b489b68c289a5c2c22157fe1a7c408c41bb",
+  "Model": "speridlabs/idol",
+  "ModelRevision": "2731c2291fc65a797c5cb627a5e5526fc1490902",
+  "Tool": "https://github.com/shohdi/idol-csharp",
+  "ToolCommit": "1ff3ee61a2f719637cfb6ac8113b2ec9494fa082",
+  "Options": {
+    "Seed": 1042,
+    "Steps": 50,
+    "NumGaussians": 65536,
+    "Guidance": 3,
+    "TimeShift": 3,
+    "RealPhoto": false
+  },
+  "GaussianCount": 65536,
+  "Output": "Assets/Game/Art/Splats/courier.idolply",
+  "OutputSha256": "cb4d157cfd958701afeff95c1261dc675d5b53787dd587fa0845523a07d2f152",
+  "Seconds": 196.5596816,
+  "CreatedUtc": "2026-10-31T13:52:29.1650408Z",
+  "CoordinateConvention": "Idol Studio native Z-up to Y-up; Unity importer reflects Z",
+  "GeometryEdits": "None. Original Idol output; game applies only rigid transforms and scale."
+}
